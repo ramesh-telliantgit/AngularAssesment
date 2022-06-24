@@ -1,0 +1,13 @@
+<p>PixBay Wonder creatives!</p>
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let flr of pixBay">
+            <div class="card" style="width: 18rem;" style="width:250px;height:250px;">
+                <img [src]="flr.largeImageURL" alt="...">
+                <div class="card-body">
+                    <p class="card-text">{{flr.tags}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
